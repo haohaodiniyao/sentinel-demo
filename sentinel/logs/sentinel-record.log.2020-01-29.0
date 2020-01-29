@@ -1,0 +1,214 @@
+2020-01-29 22:48:57.255 INFO Add child <sentinel_default_context> to node <machine-root>
+2020-01-29 22:48:57.256 INFO Add child <sentinel_web_servlet_context> to node <machine-root>
+2020-01-29 22:48:57.260 INFO App name resolved: sentinel-demo
+2020-01-29 22:48:57.261 INFO [SentinelConfig] Application type resolved: 0
+2020-01-29 22:48:57.262 INFO [InitExecutor] Found init func: com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc
+2020-01-29 22:48:57.264 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2020-01-29 22:48:57.266 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2020-01-29 22:48:57.267 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit
+2020-01-29 22:48:57.268 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc
+2020-01-29 22:48:57.269 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc
+2020-01-29 22:48:57.269 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2020-01-29 22:48:57.272 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2020-01-29 22:48:57.272 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 22:48:57.288 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 22:48:57.289 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2020-01-29 22:48:57.293 INFO [SimpleHttpHeartbeatSender] Default console address list retrieved: [localhost/127.0.0.1:8383]
+2020-01-29 22:48:57.293 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2020-01-29 22:48:57.293 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 22:48:57.293 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2020-01-29 22:48:57.294 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 22:48:57.294 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2020-01-29 22:48:57.298 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc with order 0
+2020-01-29 22:48:57.558 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=6.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=null}]
+2020-01-29 22:48:57.559 INFO Initialized rule for namespace: application, rule key: flowRules
+2020-01-29 22:48:57.562 INFO [FlowRuleManager] Flow rules loaded: {}
+2020-01-29 22:48:57.565 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2020-01-29 22:48:57.566 INFO [FlowRuleManager] Registering new property to flow rule manager
+2020-01-29 22:48:57.568 INFO [FlowRuleManager] Flow rules loaded: {sentinelTest=[FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=6.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@5bb7609b}]}
+2020-01-29 22:48:57.569 INFO [InitExecutor] Executing com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc with order 2147483647
+2020-01-29 22:48:57.572 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit with order 2147483647
+2020-01-29 22:48:57.579 INFO [TokenServiceProvider] Global token service resolved: com.alibaba.csp.sentinel.cluster.flow.DefaultTokenService
+2020-01-29 22:48:57.580 INFO [DefaultClusterServerInitFunc] Default entity codec and processors registered
+2020-01-29 22:48:57.580 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc with order 2147483647
+2020-01-29 22:48:57.581 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2020-01-29 22:48:57.583 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.HotParamSlotChainBuilder
+2020-01-29 22:48:57.595 INFO Add child </sentinel/test> to node <sentinel_web_servlet_context>
+2020-01-29 22:48:57.597 INFO [ParamFlowRuleManager] No parameter flow rules, clearing all parameter metrics
+2020-01-29 22:48:57.598 INFO [ParamFlowRuleManager] Parameter flow rules received: {}
+2020-01-29 22:48:57.602 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2020-01-29 22:48:57.603 INFO [AuthorityRuleManager] Load authority rules: {}
+2020-01-29 22:48:57.604 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2020-01-29 22:48:57.606 INFO [MetricExtensionProvider] MetricExtension resolved, size=0
+2020-01-29 22:48:57.642 INFO Add child <sentinelTest> to node </sentinel/test>
+2020-01-29 22:48:57.702 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 22:48:57.702 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 22:48:57.702 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 22:48:57.702 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 22:48:57.702 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 22:48:58.570 INFO [MetricWriter] New metric file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29
+2020-01-29 22:48:58.570 INFO [MetricWriter] New metric index file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29.idx
+2020-01-29 23:28:02.666 INFO [ApolloDataSource] Received config changes: ConfigChange{namespace='application', propertyName='flowRules', oldValue='[{"resource":"sentinelTest","controlBehavior":0,"count":6.0,"grade":1,"limitApp":"default","strategy":0}]', newValue='[{"resource":"sentinelTest","controlBehavior":0,"count":7.0,"grade":1,"limitApp":"default","strategy":0}]', changeType=MODIFIED}
+2020-01-29 23:28:02.667 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=null}]
+2020-01-29 23:28:02.668 INFO [FlowRuleManager] Flow rules received: {sentinelTest=[FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@47ea7ce7}]}
+2020-01-29 23:33:56.936 INFO Add child <sentinel_default_context> to node <machine-root>
+2020-01-29 23:33:56.937 INFO Add child <sentinel_web_servlet_context> to node <machine-root>
+2020-01-29 23:33:56.943 INFO App name resolved: sentinel-demo
+2020-01-29 23:33:56.945 INFO [SentinelConfig] Application type resolved: 0
+2020-01-29 23:33:56.946 INFO [InitExecutor] Found init func: com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc
+2020-01-29 23:33:56.949 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2020-01-29 23:33:56.951 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2020-01-29 23:33:56.952 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit
+2020-01-29 23:33:56.953 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc
+2020-01-29 23:33:56.954 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc
+2020-01-29 23:33:56.956 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2020-01-29 23:33:56.960 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2020-01-29 23:33:56.961 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 23:33:56.981 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 23:33:56.981 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2020-01-29 23:33:56.989 INFO [SimpleHttpHeartbeatSender] Default console address list retrieved: [localhost/127.0.0.1:8383]
+2020-01-29 23:33:56.990 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2020-01-29 23:33:56.990 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 23:33:56.991 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2020-01-29 23:33:56.992 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 23:33:56.992 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2020-01-29 23:33:56.997 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc with order 0
+2020-01-29 23:33:57.266 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=null}]
+2020-01-29 23:33:57.267 INFO Initialized rule for namespace: application, rule key: flowRules
+2020-01-29 23:33:57.271 INFO [FlowRuleManager] Flow rules loaded: {}
+2020-01-29 23:33:57.274 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2020-01-29 23:33:57.274 INFO [FlowRuleManager] Registering new property to flow rule manager
+2020-01-29 23:33:57.277 INFO [FlowRuleManager] Flow rules loaded: {sentinelTest=[FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@3a796ef7}]}
+2020-01-29 23:33:57.278 INFO [InitExecutor] Executing com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc with order 2147483647
+2020-01-29 23:33:57.281 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit with order 2147483647
+2020-01-29 23:33:57.287 INFO [TokenServiceProvider] Global token service resolved: com.alibaba.csp.sentinel.cluster.flow.DefaultTokenService
+2020-01-29 23:33:57.288 INFO [DefaultClusterServerInitFunc] Default entity codec and processors registered
+2020-01-29 23:33:57.288 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc with order 2147483647
+2020-01-29 23:33:57.289 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2020-01-29 23:33:57.292 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.HotParamSlotChainBuilder
+2020-01-29 23:33:57.300 INFO Add child </sentinel/test> to node <sentinel_web_servlet_context>
+2020-01-29 23:33:57.307 INFO [ParamFlowRuleManager] No parameter flow rules, clearing all parameter metrics
+2020-01-29 23:33:57.307 INFO [ParamFlowRuleManager] Parameter flow rules received: {}
+2020-01-29 23:33:57.312 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2020-01-29 23:33:57.313 INFO [AuthorityRuleManager] Load authority rules: {}
+2020-01-29 23:33:57.315 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2020-01-29 23:33:57.317 INFO [MetricExtensionProvider] MetricExtension resolved, size=0
+2020-01-29 23:33:57.354 INFO Add child <sentinelTest> to node </sentinel/test>
+2020-01-29 23:33:57.431 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:33:57.432 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:33:57.431 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:33:57.432 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:33:57.431 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:33:57.432 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:33:58.281 INFO [MetricWriter] New metric file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29.1
+2020-01-29 23:33:58.282 INFO [MetricWriter] New metric index file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29.1.idx
+2020-01-29 23:35:31.396 INFO Add child <sentinel_default_context> to node <machine-root>
+2020-01-29 23:35:31.397 INFO Add child <sentinel_web_servlet_context> to node <machine-root>
+2020-01-29 23:35:31.401 INFO App name resolved: sentinel-demo
+2020-01-29 23:35:31.402 INFO [SentinelConfig] Application type resolved: 0
+2020-01-29 23:35:31.404 INFO [InitExecutor] Found init func: com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc
+2020-01-29 23:35:31.406 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2020-01-29 23:35:31.407 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2020-01-29 23:35:31.408 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit
+2020-01-29 23:35:31.409 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc
+2020-01-29 23:35:31.410 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc
+2020-01-29 23:35:31.411 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2020-01-29 23:35:31.414 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2020-01-29 23:35:31.414 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 23:35:31.440 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 23:35:31.440 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2020-01-29 23:35:31.456 INFO [SimpleHttpHeartbeatSender] Default console address list retrieved: [localhost/127.0.0.1:8383]
+2020-01-29 23:35:31.456 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2020-01-29 23:35:31.456 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 23:35:31.457 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2020-01-29 23:35:31.459 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 23:35:31.459 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2020-01-29 23:35:31.465 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc with order 0
+2020-01-29 23:35:31.722 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=null}]
+2020-01-29 23:35:31.723 INFO Initialized rule for namespace: application, rule key: flowRules
+2020-01-29 23:35:31.725 INFO [FlowRuleManager] Flow rules loaded: {}
+2020-01-29 23:35:31.728 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2020-01-29 23:35:31.729 INFO [FlowRuleManager] Registering new property to flow rule manager
+2020-01-29 23:35:31.730 INFO [FlowRuleManager] Flow rules loaded: {sentinelTest=[FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@37ef327}]}
+2020-01-29 23:35:31.731 INFO [InitExecutor] Executing com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc with order 2147483647
+2020-01-29 23:35:31.733 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit with order 2147483647
+2020-01-29 23:35:31.740 INFO [TokenServiceProvider] Global token service resolved: com.alibaba.csp.sentinel.cluster.flow.DefaultTokenService
+2020-01-29 23:35:31.740 INFO [DefaultClusterServerInitFunc] Default entity codec and processors registered
+2020-01-29 23:35:31.740 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc with order 2147483647
+2020-01-29 23:35:31.741 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2020-01-29 23:35:31.744 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.HotParamSlotChainBuilder
+2020-01-29 23:35:31.750 INFO Add child </sentinel/test> to node <sentinel_web_servlet_context>
+2020-01-29 23:35:31.753 INFO [ParamFlowRuleManager] No parameter flow rules, clearing all parameter metrics
+2020-01-29 23:35:31.753 INFO [ParamFlowRuleManager] Parameter flow rules received: {}
+2020-01-29 23:35:31.756 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2020-01-29 23:35:31.758 INFO [AuthorityRuleManager] Load authority rules: {}
+2020-01-29 23:35:31.760 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2020-01-29 23:35:31.762 INFO [MetricExtensionProvider] MetricExtension resolved, size=0
+2020-01-29 23:35:31.797 INFO Add child <sentinelTest> to node </sentinel/test>
+2020-01-29 23:35:31.858 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:35:31.858 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:35:31.858 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:35:31.858 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:35:31.858 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:35:32.734 INFO [MetricWriter] New metric file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29.2
+2020-01-29 23:35:32.735 INFO [MetricWriter] New metric index file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29.2.idx
+2020-01-29 23:37:29.781 INFO Add child <sentinel_default_context> to node <machine-root>
+2020-01-29 23:37:29.782 INFO Add child <sentinel_web_servlet_context> to node <machine-root>
+2020-01-29 23:37:29.786 INFO App name resolved: sentinel-demo
+2020-01-29 23:37:29.787 INFO [SentinelConfig] Application type resolved: 0
+2020-01-29 23:37:29.790 INFO [InitExecutor] Found init func: com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc
+2020-01-29 23:37:29.792 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2020-01-29 23:37:29.793 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2020-01-29 23:37:29.794 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit
+2020-01-29 23:37:29.795 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc
+2020-01-29 23:37:29.796 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc
+2020-01-29 23:37:29.797 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2020-01-29 23:37:29.801 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2020-01-29 23:37:29.801 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 23:37:29.818 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-01-29 23:37:29.818 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2020-01-29 23:37:29.823 INFO [SimpleHttpHeartbeatSender] Default console address list retrieved: [localhost/127.0.0.1:8383]
+2020-01-29 23:37:29.823 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2020-01-29 23:37:29.823 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 23:37:29.824 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2020-01-29 23:37:29.824 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-01-29 23:37:29.825 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2020-01-29 23:37:29.831 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc with order 0
+2020-01-29 23:37:30.040 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=null}]
+2020-01-29 23:37:30.042 INFO Initialized rule for namespace: application, rule key: flowRules
+2020-01-29 23:37:30.046 INFO [FlowRuleManager] Flow rules loaded: {}
+2020-01-29 23:37:30.049 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2020-01-29 23:37:30.051 INFO [FlowRuleManager] Registering new property to flow rule manager
+2020-01-29 23:37:30.052 INFO [FlowRuleManager] Flow rules loaded: {sentinelTest=[FlowRule{resource=sentinelTest, limitApp=default, grade=1, count=7.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@4bf4a7f7}]}
+2020-01-29 23:37:30.052 INFO [InitExecutor] Executing com.example.sentineldemo.datasource.sentinel.DataSourceInitFunc with order 2147483647
+2020-01-29 23:37:30.057 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit with order 2147483647
+2020-01-29 23:37:30.065 INFO [TokenServiceProvider] Global token service resolved: com.alibaba.csp.sentinel.cluster.flow.DefaultTokenService
+2020-01-29 23:37:30.065 INFO [DefaultClusterServerInitFunc] Default entity codec and processors registered
+2020-01-29 23:37:30.065 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc with order 2147483647
+2020-01-29 23:37:30.066 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2020-01-29 23:37:30.068 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.HotParamSlotChainBuilder
+2020-01-29 23:37:30.075 INFO Add child </sentinel/test> to node <sentinel_web_servlet_context>
+2020-01-29 23:37:30.077 INFO [ParamFlowRuleManager] No parameter flow rules, clearing all parameter metrics
+2020-01-29 23:37:30.078 INFO [ParamFlowRuleManager] Parameter flow rules received: {}
+2020-01-29 23:37:30.081 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2020-01-29 23:37:30.083 INFO [AuthorityRuleManager] Load authority rules: {}
+2020-01-29 23:37:30.085 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2020-01-29 23:37:30.087 INFO [MetricExtensionProvider] MetricExtension resolved, size=0
+2020-01-29 23:37:30.117 INFO Add child <sentinelTest> to node </sentinel/test>
+2020-01-29 23:37:30.182 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:37:30.183 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:37:30.183 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:37:30.183 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:37:30.183 WARNING Cannot find method [exceptionHandler] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class com.alibaba.csp.sentinel.slots.block.BlockException]
+2020-01-29 23:37:30.184 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters []
+2020-01-29 23:37:30.183 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters []
+2020-01-29 23:37:30.183 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters []
+2020-01-29 23:37:30.183 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters []
+2020-01-29 23:37:30.184 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class java.lang.Throwable]
+2020-01-29 23:37:30.184 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class java.lang.Throwable]
+2020-01-29 23:37:30.184 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class java.lang.Throwable]
+2020-01-29 23:37:30.184 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters []
+2020-01-29 23:37:30.185 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class java.lang.Throwable]
+2020-01-29 23:37:30.184 WARNING Cannot find method [fallback] in class [com.example.sentineldemo.controller.sentinel.SentinelController] with parameters [class java.lang.Throwable]
+2020-01-29 23:37:31.057 INFO [MetricWriter] New metric file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29.3
+2020-01-29 23:37:31.057 INFO [MetricWriter] New metric index file created: /Users/yaokai/sentinel-demo/sentinel/logs/sentinel-demo-metrics.log.2020-01-29.3.idx
